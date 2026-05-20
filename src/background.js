@@ -7,7 +7,7 @@ let useTimestamp = false;
 browser.storage.local.get(["enabled", "extensions", "folder", "useTimestamp"]).then((res) => {
   isEnabled = res.enabled || false;
   targetExtensions = parseExtensions(res.extensions || "png,jpg");
-  targetFolder = sanitizeFolder(res.folder || "ffDownloader");
+  targetFolder = sanitizeFolder(res.folder || "cacheMonitorDownloader");
   useTimestamp = res.useTimestamp || false;
 });
 

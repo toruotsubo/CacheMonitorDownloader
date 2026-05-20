@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   browser.storage.local.get(["enabled", "extensions", "folder", "useTimestamp"]).then((res) => {
     toggle.checked = res.enabled || false;
     extInput.value = res.extensions !== undefined ? res.extensions : "png,jpg";
-    folderInput.value = res.folder !== undefined ? res.folder : "ffDownloader";
+    folderInput.value = res.folder !== undefined ? res.folder : "cacheMonitorDownloader";
     addTimestampToggle.checked = res.useTimestamp || false;
     updateStatusText();
   });
