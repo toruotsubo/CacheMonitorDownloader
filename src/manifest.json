@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Cache Monitor Downloader",
+  "version": "1.0",
+  "description": "Monitors network requests and automatically saves files with specific extensions to a designated folder.",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "webRequestFilterResponse",
+    "downloads",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Cache Monitor Downloader"
+  }
+}
