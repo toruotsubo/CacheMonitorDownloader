@@ -1,4 +1,14 @@
 {
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "cacheMonitorDownloader@tokotan.jp",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
   "manifest_version": 3,
   "name": "Cache Monitor Downloader",
   "version": "1.0",
@@ -14,10 +24,16 @@
     "<all_urls>"
   ],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": [
+      "background.js"
+    ]
   },
   "action": {
     "default_popup": "popup/popup.html",
     "default_title": "Cache Monitor Downloader"
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
   }
 }
